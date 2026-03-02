@@ -14,8 +14,9 @@
    ```powershell
    pip install -r requirements.txt
    ```
-4. Run the app:
+4. Run the app from the repository root (add `src` to `PYTHONPATH` for this scaffold):
    ```powershell
+   $env:PYTHONPATH = "src"
    python -m roals_app
    ```
 
