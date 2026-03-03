@@ -1,0 +1,6 @@
+# ROALS Desktop App (read-only) configuration
+schema_version = "1.0"
+
+[paths]
+data_root = "C:/Users/rdenk/roals_data"
+logs_dir  = "C:/Users/rdenk/roals_logs"
