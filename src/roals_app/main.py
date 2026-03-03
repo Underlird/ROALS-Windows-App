@@ -1,12 +1,18 @@
-"""Application entry point scaffold for ROALS Windows App."""
+import sys
+
+from PySide6.QtWidgets import QApplication
 
 from roals_app.ui.main_window import MainWindow
 
 
 def main() -> int:
-    """Placeholder entry point for future application startup."""
-    _ = MainWindow
-    return 0
+    app = QApplication(sys.argv)
+    app.setQuitOnLastWindowClosed(False)  # wichtig für Tray-only später
+
+    win = MainWindow()
+    win.show()
+
+    return app.exec()
 
 
 if __name__ == "__main__":
