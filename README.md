@@ -22,3 +22,14 @@
 ## Notes
 - This is a tray-first PySide6 application.
 - Task 1 currently provides minimal placeholder windows and menu actions.
+
+
+## Local Dev (Windows)
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -U pip
+python -m pip install -e .
+roals-desktop
+```
